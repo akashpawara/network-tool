@@ -80,156 +80,10 @@
     </v-snackbar>
   </div>
     <v-row>
-      <!-- start of comment -->
       <v-col
         cols="12"
         lg="12"
       >
-        <!-- <base-material-chart-card
-          :data="emailsSubscriptionChart.data"
-          :options="emailsSubscriptionChart.options"
-          :responsive-options="emailsSubscriptionChart.responsiveOptions"
-          color="#E91E63"
-          hover-reveal
-          type="Bar"
-        >
-          <template v-slot:reveal-actions>
-            <v-tooltip bottom>
-              <template v-slot:activator="{ attrs, on }">
-                <v-btn
-                  v-bind="attrs"
-                  color="info"
-                  icon
-                  v-on="on"
-                >
-                  <v-icon
-                    color="info"
-                  >
-                    mdi-refresh
-                  </v-icon>
-                </v-btn>
-              </template>
-
-              <span>Refresh</span>
-            </v-tooltip>
-
-            <v-tooltip bottom>
-              <template v-slot:activator="{ attrs, on }">
-                <v-btn
-                  v-bind="attrs"
-                  light
-                  icon
-                  v-on="on"
-                >
-                  <v-icon>mdi-pencil</v-icon>
-                </v-btn>
-              </template>
-
-              <span>Change Date</span>
-            </v-tooltip>
-          </template>
-
-          <h4 class="card-title font-weight-light mt-2 ml-2">
-            Website Views
-          </h4>
-
-          <p class="d-inline-flex font-weight-light ml-2 mt-1">
-            Last Campaign Performance
-          </p>
-
-          <template v-slot:actions>
-            <v-icon
-              class="mr-1"
-              small
-            >
-              mdi-clock-outline
-            </v-icon>
-            <span class="caption grey--text font-weight-light">updated 10 minutes ago</span>
-          </template>
-        </base-material-chart-card>
-      </v-col>
-
-      <v-col
-        cols="12"
-        lg="4"
-      >
-        <base-material-chart-card
-          :data="dailySalesChart.data"
-          :options="dailySalesChart.options"
-          color="success"
-          hover-reveal
-          type="Line"
-        >
-          <template v-slot:reveal-actions>
-            <v-tooltip bottom>
-              <template v-slot:activator="{ attrs, on }">
-                <v-btn
-                  v-bind="attrs"
-                  color="info"
-                  icon
-                  v-on="on"
-                >
-                  <v-icon
-                    color="info"
-                  >
-                    mdi-refresh
-                  </v-icon>
-                </v-btn>
-              </template>
-
-              <span>Refresh</span>
-            </v-tooltip>
-
-            <v-tooltip bottom>
-              <template v-slot:activator="{ attrs, on }">
-                <v-btn
-                  v-bind="attrs"
-                  light
-                  icon
-                  v-on="on"
-                >
-                  <v-icon>mdi-pencil</v-icon>
-                </v-btn>
-              </template>
-
-              <span>Change Date</span>
-            </v-tooltip>
-          </template>
-
-          <h4 class="card-title font-weight-light mt-2 ml-2">
-            Daily Sales
-          </h4>
-
-          <p class="d-inline-flex font-weight-light ml-2 mt-1">
-            <v-icon
-              color="green"
-              small
-            >
-              mdi-arrow-up
-            </v-icon>
-            <span class="green--text">55%</span>&nbsp;
-            increase in today's sales
-          </p>
-
-          <template v-slot:actions>
-            <v-icon
-              class="mr-1"
-              small
-            >
-              mdi-clock-outline
-            </v-icon>
-            <span class="caption grey--text font-weight-light">updated 4 minutes ago</span>
-          </template>
-        </base-material-chart-card>
-      </v-col>
-
-      <v-col
-        cols="12"
-        lg="4"
-      > -->
-
-      <!-- end of initial -->
-
         <base-material-chart-card
           :data="dataCompletedTasksChart.data"
           :options="dataCompletedTasksChart.options"
@@ -280,20 +134,8 @@
           <p class="d-inline-flex font-weight-light ml-2 mt-1">
             Last 12 hours
           </p>
-
-          <!-- <template v-slot:actions>
-            <v-icon
-              class="mr-1"
-              small
-            >
-              mdi-clock-outline
-            </v-icon>
-            <span class="caption grey--text font-weight-light">campaign sent 26 minutes ago</span>
-          </template> -->
         </base-material-chart-card>
       </v-col>
-
-      <!-- end of comment -->
 
       <v-col
         cols="12"
@@ -371,63 +213,6 @@
         </base-material-card>
       </v-col>
 
-      <!-- <v-col
-        cols="12"
-        md="6"
-      >
-        <base-material-card class="px-5 py-3">
-          <template v-slot:heading>
-            <v-tabs
-              v-model="tabs"
-              background-color="transparent"
-              slider-color="white"
-            >
-              <v-tab>
-                <v-icon class="mr-2">
-                  mdi-cloud
-                </v-icon>
-                Devices
-              </v-tab>
-            </v-tabs>
-          </template>
-
-          <v-tabs-items
-            v-model="tabs"
-            class="transparent"
-          >
-            <v-tab-item
-              v-for="n in 3"
-              :key="n"
-            >
-              <v-card-text>
-                <template v-for="(task, i) in tasks[tabs]">
-                  <v-row
-                    :key="i"
-                    align="center"
-                  >
-                    <v-col cols="9">
-                      <div
-                        class="font-weight-light"
-                        v-text="task.text"
-                      />
-                    </v-col>
-
-                    <v-col
-                      cols="9"
-                      class="text-right"
-                    >
-                    <div
-                        class="font-weight-light"
-                        v-text="task.value"
-                      />
-                    </v-col>
-                  </v-row>
-                </template>
-              </v-card-text>
-            </v-tab-item>
-          </v-tabs-items>
-        </base-material-card>
-      </v-col> -->
     </v-row>
   </v-container>
 </template>
@@ -448,6 +233,8 @@
         name: 'Yogita',
         from: 'Network Tool',
         message: 'We found a suspicious traffic in your network',
+        latencyMessage: 'Dear user, your network latency has been degraded.',
+        performanceMessage: 'Dear user, your network performance is not in a good state.',
         reply: 'akashpawara29@gmail.com',
         text: 'Latency is degrading',
         text2: 'performance is degrading',
@@ -584,19 +371,19 @@
           {
             id: 6,
             name: 'bluetooth-monitor',
-            description: 'Bluetooth Linux Monitor',
+            description: 'Bluetooth Monitor',
             flags: '',
           },
           {
             id: 7,
             name: 'nflog',
-            description: 'Linux netfilter log (NFLOG) interface',
+            description: 'Netfilter log (NFLOG) interface',
             flags: '',
           },
           {
             id: 8,
             name: 'nfqueue',
-            description: 'Linux netfilter queue (NFQUEUE) interface',
+            description: 'Netfilter queue (NFQUEUE) interface',
             flags: '',
           },
           {
@@ -694,13 +481,14 @@
         this.list[index] = !this.list[index]
       },
       sendEmail (e) {
+        var templateParams = {
+          name: this.name,
+          from: this.from,
+          message: this.message,
+          reply: this.reply,
+        }
         try {
-          emailjs.sendForm('gmail', 'template_m05ZcS3j', e.target, 'user_fRiYQMfbpf0gh8zSPlizD', {
-            name: this.name,
-            from: this.from,
-            message: this.message,
-            reply: this.reply,
-          })
+          emailjs.send('gmail', 'template_4tvt50q', templateParams, 'user_WSNz5jglkfmXSr40i2BXa')
         } catch (error) {
           console.log({ error })
         }
@@ -711,6 +499,17 @@
         this.ping = '150'
         this.downSpeed = '2'
         this.upSpeed = '1'
+        var templateParams = {
+          name: this.name,
+          from: this.from,
+          message: this.latencyMessage,
+          reply: this.reply,
+        }
+        try {
+          emailjs.send('gmail', 'template_4tvt50q', templateParams, 'user_WSNz5jglkfmXSr40i2BXa')
+        } catch (error) {
+          console.log({ error })
+        }
       },
       latencyReverse (e) {
         this.snackbar = false
@@ -721,6 +520,17 @@
       performance (e) {
         this.snackbar2 = true
         this.dataCompletedTasksChart.data.series = [[30, 150, 50, 200, 280, 240, 220, 290]]
+        var templateParams = {
+          name: this.name,
+          from: this.from,
+          message: this.performanceMessage,
+          reply: this.reply,
+        }
+        try {
+          emailjs.send('gmail', 'template_4tvt50q', templateParams, 'user_WSNz5jglkfmXSr40i2BXa')
+        } catch (error) {
+          console.log({ error })
+        }
       },
       performanceReverse (e) {
         this.snackbar2 = false
